@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sym wedding Events </title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/style.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/all.css">
+    <link rel="icon" href="./image/sym-low-resolution-logo-color-on-transparent-background (2).png">
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- <script src="./bootstrap-5.0.2-dist/js/jquery-3.6.3.min.js"></script> -->
+
+
+    <style>
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
+
+        :root {
+            --succes-color: #2ecc71;
+            ;
+            --error-color: #e74c3c;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* body {
+
+            background-color: #f9fafb;
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        } */
+
+        .container-coustom {
+            /* background-color: #fff; */
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            /* width: 500px; */
+        }
+
+        h2 {
+            text-align: center;
+            margin: 0 0 20px;
+        }
+
+        .form {
+            padding: 30px 40px;
+        }
+
+        .form-control-custom {
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        .form-control-custom label {
+            color: #ffffff;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-control-custom input {
+            border: 2px solid #f0f0f0;
+            border-radius: 4px;
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .form-control-custom input:focus {
+            outline: 0;
+            border-color: #777;
+
+        }
+
+        .form-control-custom.success input {
+            border-color: var(--succes-color);
+        }
+
+        .form-control-custom.error input {
+            border-color: var(--error-color);
+        }
+
+        .form-control-custom small {
+            color: var(--error-color);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            visibility: hidden;
+        }
+
+        .form-control-custom.error small {
+            visibility: visible;
+        }
+
+        .form button {
+            cursor: pointer;
+            background-color: #3498db;
+            border: 2px solid #3498db;
+            border-radius: 4px;
+            color: #fff;
+            display: block;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .form-container{
+            display: none;
+        }
+    </style>
+</head>
+
+<body style="overflow-x: hidden;">
+    <header id="header-section" class="animated fadeInDown header-fixed">
+        <div class="overlay">
+            <div class="container ">
+                <div class="row d-flex header-area">
+                    <div class="logo-section flex-grow-1 d-flex align-items-center">
+                        <a href="index.html" class="site-logo site-title"><img
+                                src="image/sym-low-resolution-logo-color-on-transparent-background (2).png"
+                                height="100px" width="100px" alt="site-logo"></a>
+                    </div>
+                    <button class="navbar-toggler ml-auto collapsed " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars nav-show"></i>
+                    </button>
+                    <nav class="navbar navbar-expand-lg p-0">
+                        <div class="navbar-collapse showclass collapse" id="navbarSupportedContent1">
+                            <ul class="navbar-nav main-menu ml-auto">
+                                <li><a class="align-items-center d-flex h-100" href="index.html">Home</a></li>
+                                <li class="mainMenu"><a class="align-items-center d-flex h-100">PRICING</a>
+                                    <ul class="sub-menu">
+                                        <li><a class="align-items-center d-flex h-100"
+                                                href="./Packeges/Classic.html">Classic</a></li>
+                                        <li><a class="align-items-center d-flex h-100"
+                                                href="./Packeges/Elegent.html">Elegant</a></li>
+                                        <li><a class="align-items-center d-flex h-100"
+                                                href="./Packeges/Premire.html">Premier </a></li>
+                                        <li><a class="align-items-center d-flex h-100" href="./Packeges/Gold.html">Gold
+                                            </a></li>
+                                        <li><a class="align-items-center d-flex h-100" href="./Packeges/Elite.html">Elite
+                                            </a></li>
+                                    </ul>
+                                </li>
+                                <li class=""><a class="align-items-center d-flex h-100"
+                                        href="inspiration.html">Inspiration</a>
+                                </li>
+                                <li><a class="align-items-center d-flex h-100" href="about.html">About Us</a></li>
+
+                                <li class="active">
+                                    <a class="align-items-center d-flex h-100" href="signin.html"><span
+                                            class="cmn-btn py-1" style="
+                                        line-height: inherit;
+                                    ">Login</span> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="right-area header-action d-flex align-items-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Registration -->
+    <div class="container container-coustom pt-120 form-container" id="registration-form">
+        <form id="form" class="form">
+            <h2>Register With Us</h2>
+            <div class="form-control-custom">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter Username">
+                <small class="text-truncate">Error Message</small>
+            </div>
+            <div class="form-control-custom">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Enter email">
+                <small class="text-truncate">Error Message</small>
+            </div>
+            <div class="form-control-custom">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter password">
+                <small class="text-truncate">Error Message</small>
+            </div>
+            <div class="form-control-custom">
+                <label for="password2">Confirm Password</label>
+                <input type="password" name="Confirm-Password" id="password2" placeholder="Enter password again">
+                <small class="text-truncate">Error Message</small>
+            </div>
+            <!-- <p class="text-center" id="signupmsg">Don't have account? <a href="signin.html?activity=signup"
+                    class="text-decoration-none">Sign Up</a></p> -->
+            <p class="text-center" id="loginmsg">Already have account? <a href="signin.html"
+                    class="text-decoration-none">Log In</a></p>
+            <button class="w-25 m-auto">Submit</button>
+        </form>
+    </div>
+
+    <!-- Login  -->
+    <div class="container container-coustom pt-120 form-container" id="login-form">
+        <form id="form2" class="form">
+            <h2>Login With Us</h2>
+            <div class="form-control-custom">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username2" placeholder="Enter Username">
+                <small class="text-truncate">Error Message</small>
+            </div>
+            <div class="form-control-custom">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password3" placeholder="Enter password">
+                <small class="text-truncate">Error Message</small>
+            </div>
+            <p class="text-center" id="signupmsg">Don't have account? <a href="signin.html?activity=signup"
+                    class="text-decoration-none">Sign Up</a></p>
+            <!-- <p class="text-center" id="loginmsg">Already have account? <a href="signin.html"
+                    class="text-decoration-none">Log In</a></p> -->
+            <button class="w-25 m-auto">Submit</button>
+        </form>
+    </div>
+
+    
+
+</body>
+<script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="./bootstrap-5.0.2-dist/fontawesome.js"></script>
+
+<script>
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Get references to the forms and links
+        const loginForm = document.getElementById('login-form');
+        const registrationForm = document.getElementById('registration-form');
+        const showSignupLink = document.getElementById('signupmsg');
+        const showLoginLink = document.getElementById('loginmsg');
+
+        // Show the login form by default
+        loginForm.style.display = 'block';
+
+        // Event listener for "Sign Up" link
+        showSignupLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            loginForm.style.display = 'none';
+            registrationForm.style.display = 'block';
+        });
+
+        // Event listener for "Login" link
+        showLoginLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            registrationForm.style.display = 'none';
+            loginForm.style.display = 'block';
+        });
+    });
+
+
+    //Event listener for toggle button open and close
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('.nav-show').addEventListener('click', function () {
+            let showElement = document.querySelector('.showclass');
+            if (showElement.style.display === 'none' || showElement.style.display === '') {
+                console.log("Open")
+                showElement.style.display = 'block';
+            } else {
+                console.log("Close")
+                showElement.style.display = 'none';
+            }
+        });
+    });
+
+    const form = document.getElementById('form');
+    const form2 = document.getElementById('form2');
+    const username = document.getElementById('username');
+    const username2 = document.getElementById('username2');
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+    const password3 = document.getElementById('password3');
+    const password2 = document.getElementById('password2');
+
+    function showError(input, message) {
+        const formControl = input.parentElement;
+        formControl.className = 'form-control-custom error';
+        const small = formControl.querySelector('small');
+        small.innerText = message;
+    }
+    function showSucces(input) {
+        const formControl = input.parentElement;
+        formControl.className = 'form-control-custom success';
+    }
+
+    function checkEmail(input) {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (re.test(input.value.trim())) {
+            showSucces(input)
+            return true;
+
+        } else {
+            showError(input, 'Email is not invalid');
+            return false;
+
+        }
+    }
+
+    function checkRequired(inputArr) {
+        let item = true
+        inputArr.forEach(function (input) {
+            if (input.value.trim() === '') {
+                showError(input, `${getFieldName(input)} is required`)
+                item = false;
+            } else {
+                showSucces(input);
+                return true;
+            }
+        });
+        return item
+    }
+    function checkLength(input, min, max) {
+        if (input.value.length < min) {
+            showError(input, `${getFieldName(input)} must be at least ${min} characters`);
+            return false;
+        } else if (input.value.length > max) {
+            showError(input, `${getFieldName(input)} must be les than ${max} characters`);
+            return false;
+        } else {
+            showSucces(input);
+            return true;
+
+        }
+    }
+    function getFieldName(input) {
+        return input.name.charAt(0).toUpperCase() + input.name.slice(1);
+    }
+    function checkPasswordMatch(input1, input2) {
+        if (input1.value !== input2.value) {
+            showError(input2, 'Passwords do not match');
+            return false;
+        }
+        else {
+            return true;
+
+        }
+    }
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        let all = checkRequired([username, email, password, password2]);
+        let user = checkLength(username, 3, 15);
+        let pass = checkLength(password, 6, 25);
+        let email1 = checkEmail(email);
+        let match = checkPasswordMatch(password, password2);
+        if (match && email1 && pass && user && all) {
+            window.location.href = `welcome.html?username=${username.value}`
+        }
+    });
+    form2.addEventListener('submit', function (e) {
+        e.preventDefault();
+        let all = checkRequired([username2, password3]);
+        let username = checkLength(username2, 3, 15);
+        let password = checkLength(password3, 6, 25);
+        if (all && username && password) {
+            window.location.href = `welcome.html?username=${username2.value}`
+        }
+    });
+</script>
+
+</body>
+
+</html>
+
+
+</html>

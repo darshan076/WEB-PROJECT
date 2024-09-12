@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sym wedding Events </title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/style.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/all.css">
+    <link rel="icon" href="./image/sym-low-resolution-logo-color-on-transparent-background (2).png">
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap-5.0.2-dist/js/jquery-3.6.3.min.js"></script>
+</head>
+
+<body style=" overflow-x: hidden;">
+
+    <!-- header section -->
+    <header id="header-section" class="animated fadeInDown header-fixed">
+        <div class="overlay">
+            <div class="container">
+                <div class="row d-flex header-area">
+                    <div class="logo-section flex-grow-1 d-flex align-items-center">
+                        <a href="index.html" class="site-logo site-title"><img
+                                src="image/sym-low-resolution-logo-color-on-transparent-background (2).png"
+                                height="100px" width="100px" alt="site-logo"></a>
+                    </div>
+                    <button class="navbar-toggler ml-auto collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars nav-show"></i>
+                    </button>
+                    <nav class="navbar navbar-expand-lg p-0">
+                        <div class="navbar-collapse showclass collapse" id="navbarSupportedContent1">
+                            <ul class="navbar-nav main-menu ml-auto">
+                                <li><a class="align-items-center d-flex h-100" href="index.html">Home</a></li>
+                                <li class=""><a class="align-items-center d-flex h-100 active">PRICING</a>
+                                    <ul class="sub-menu">
+                                        <li><a class="align-items-center d-flex h-100"
+                                                href="price.html?type=Classic">Classic</a></li>
+                                        <li><a class="align-items-center d-flex h-100"
+                                                href="price.html?type=Elegant">Elegant</a></li>
+                                        <li><a class="align-items-center d-flex h-100"
+                                                href="price.html?type=Premier">Premier </a></li>
+                                        <li><a class="align-items-center d-flex h-100" href="price.html?type=Gold">Gold
+                                            </a></li>
+                                        <li><a class="align-items-center d-flex h-100"
+                                                href="price.html?type=Elite">Elite </a></li>
+                                    </ul>
+                                </li>
+                                <li class=""><a class="align-items-center d-flex h-100"
+                                        href="inspiration.html">Inspiration</a>
+                                </li>
+                                <li><a class="align-items-center d-flex h-100" href="about.html">About Us</a></li>
+
+                                <li class="">
+                                    <a class="align-items-center d-flex h-100" href="signin.html"><span
+                                            class="cmn-btn py-1" style="
+                                        line-height: inherit;
+                                    ">Login</span> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="right-area header-action d-flex align-items-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('.nav-show').addEventListener('click', function () {
+            let showElement = document.querySelector('.showclass');
+            if (showElement.style.display === 'none' || showElement.style.display === '') {
+                console.log("Open")
+                showElement.style.display = 'block';
+            } else {
+                console.log("Close")
+                showElement.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+<script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="./bootstrap-5.0.2-dist/fontawesome.js"></script>
+
+</html>
